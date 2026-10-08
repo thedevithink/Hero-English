@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-anime {
+    font-family: 'Bangers', cursive, sans-serif;
+    letter-spacing: 0.05em;
+  }
+  .font-hero {
+    font-family: 'Cinzel', serif;
+  }
+  .font-sans-main {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@keyframes anime-pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 12px rgba(34, 197, 94, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 24px rgba(59, 130, 246, 0.9));
+  }
+}
+
+@keyframes streak-fire {
+  0% { transform: translateY(0) scale(1); opacity: 0.8; }
+  50% { transform: translateY(-4px) scale(1.05); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 0.8; }
+}
+
+.anime-glow {
+  animation: anime-pulse-glow 2s infinite ease-in-out;
+}
+
+.streak-active {
+  animation: streak-fire 1.5s infinite ease-in-out;
+}

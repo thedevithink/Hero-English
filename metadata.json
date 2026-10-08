@@ -1,0 +1,6 @@
+{
+  "name": "Hero English: Linguistic Academy",
+  "description": "3D anime-style English learning adventure with interactive dialogues, Hero Academy trials, and an epic boss showdown against Lord Duovour.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
